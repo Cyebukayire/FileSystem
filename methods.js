@@ -2,22 +2,22 @@ const fs = require('fs');//built-in files system module
 
 
 // Read file
-if(fs.existsSync("./blog1.txt")){
-fs.readFile("./blog1.txt",(error,data)=>{
-    if(error){
-        console.log(error);
-    }
-    console.log(data.toString());
-})
-}else{ 
-    console.log("File doesn't exist.");
-}
-
-
-//Write to file & if file doesn't exist, create one
-// fs.writeFile("./blog2.txt","Hello dear Peace!",()=>{
-//     console.log("File written!");
+// if(fs.existsSync("./blog1.txt")){
+// fs.readFile("./blog1.txt",(error,data)=>{
+//     if(error){
+//         console.log(error);
+//     }
+//     console.log(data.toString());
 // })
+// }else{ 
+//     console.log("File doesn't exist.");
+// }
+
+
+Write to file & if file doesn't exist, create one
+fs.writeFile("./blog2.txt","Hello dear Peace!",()=>{
+    console.log("File written!");
+})
 
 
 // Directories
